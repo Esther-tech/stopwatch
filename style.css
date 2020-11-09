@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+main {
+    min-width: 50%;
+    background-color: #d1d1d1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 2rem 0; 
+}
+
+a {
+    background-color: #f1f1f1;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: 3rem 0;
+}
