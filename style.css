@@ -14,7 +14,7 @@ body {
 
 main {
     min-width: 50%;
-    background-color: grey;
+    background-color: #d1d1d1;
     display: flex;
     align-items: center;
     flex-direction: column;
