@@ -12,6 +12,7 @@ body {
     min-height: 80vh;
 }
 
+
 main {
     min-width: 50%;
     background-color: #d1d1d1;
@@ -28,7 +29,7 @@ h1 {
     margin: 2rem 0; 
 }
 
-a {
+button {
     background-color: #f1f1f1;
     padding: 1rem 2rem;
     display: inline-block;

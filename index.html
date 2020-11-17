@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
 
-    <link rel="stylesheet" href="./style.css" type="text/css">
+  <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
-<body>
-    
-    <main>
-        <h1>Stopwatch in vanilla JavaScript</h1>
-        <div class="container">
-            Time here
-            <div class="controls">
-                <a href="">Start</a>
-                <a href="">Pause</a>
-                <a href="">Reset</a>
-            </div>
-        </div>
-    </main>
 
-    <script src="main.js"></script>
+<body>
+
+  <main>
+    <h1>Stopwatch in vanilla JavaScript</h1>
+    <div class="container">
+      <div class="display">
+        00:00:00
+      </div>
+      <div class="controls">
+        <button id="startStop">Start</button>
+        <button>Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
