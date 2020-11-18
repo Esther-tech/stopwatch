@@ -1,4 +1,10 @@
 //Define variables
+const display = document.getElementById('display');
+const startStop = document.getElementById('startStop');
+const reset = document.getElementById('reset');
+
+let interval = null;
+let status = "stopped";
 
 let seconds = 0;
 let minutes = 0;
@@ -9,9 +15,7 @@ let displaySec = 0;
 let displayMin = 0;
 let displayHr = 0;
 
-const display = document.getElementById('display');
-const startStop = document.getElementById('startStop');
-const reset = document.getElementById('reset');
+
 
 //stopwatch function -increment value
 
