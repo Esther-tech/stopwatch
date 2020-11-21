@@ -59,4 +59,6 @@ const stopWatch = () => {
   display.innerHTML = `${displayHr}:${displayMin}:${displaySec}`;
 }
 
-window.setInterval(stopWatch, 1000);
+startStop.addEventListener("click", function () {
+  window.setInterval(stopWatch, 1000)
+});
