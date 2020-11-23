@@ -1,10 +1,4 @@
 //Define variables
-const display = document.getElementById('display');
-const startStop = document.getElementById('startStop');
-const reset = document.getElementById('reset');
-
-let interval = null;
-let status = "stopped";
 
 let seconds = 0;
 let minutes = 0;
@@ -14,6 +8,15 @@ let hours = 0;
 let displaySec = 0;
 let displayMin = 0;
 let displayHr = 0;
+
+const display = document.getElementById('display');
+const startStopBtn = document.getElementById('startStop');
+const reset = document.getElementById('reset');
+
+let interval = null;
+let status = "stopped";
+
+
 
 
 
@@ -59,6 +62,22 @@ const stopWatch = () => {
   display.innerHTML = `${displayHr}:${displayMin}:${displaySec}`;
 }
 
-startStop.addEventListener("click", function () {
-  window.setInterval(stopWatch, 1000)
-});
+
+const startStop = () => {
+
+  if (status === 'stopped') {
+
+    // start stopwatch
+    interval = window.setInterval(stopWatch, 1000);
+    startStopBtn.innerHTML = 'Stop';
+    status = 'started';
+
+  } else {
+
+    window.clearInterval(interval);
+    startStopBtn.innerHTML = 'Start';
+    status = 'stopped';
+
+  }
+}
+
