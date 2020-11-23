@@ -11,7 +11,6 @@ let displayHr = 0;
 
 const display = document.getElementById('display');
 const startStopBtn = document.getElementById('startStop');
-const reset = document.getElementById('reset');
 
 let interval = null;
 let status = "stopped";
@@ -60,7 +59,7 @@ const stopWatch = () => {
 
   //display updated time value
   display.innerHTML = `${displayHr}:${displayMin}:${displaySec}`;
-}
+};
 
 
 const startStop = () => {
@@ -74,10 +73,25 @@ const startStop = () => {
 
   } else {
 
+    // stop stopwatch
     window.clearInterval(interval);
     startStopBtn.innerHTML = 'Start';
     status = 'stopped';
 
   }
-}
+};
+
+const reset = () => {
+
+  window.clearInterval(interval);
+
+  seconds = 0;
+  minutes = 0;
+  hours = 0;
+
+  display.innerHTML = `00:00:00`;
+  status = 'stopped';
+  startStopBtn.innerHTML = 'Start';
+
+};
 
